@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+*{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --very-light-gray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:1rem;
+    display:grid;
+    place-items:center;
+    background-color:rgb(84, 144, 196);
+}
+
+article{
+    max-width:900px;
+    display:flex;
+    flex-direction:column;
+    border-radius: 10px;
+    overflow:hidden;
+    animation: scale 1s ease-in; 
+}
+
+img{
+    width:25%;
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    font-size:2.1rem;
+    text-transform:uppercase;
+}
+
+p{
+    font-family: 'Lexend Deca';
+    line-height:1.5;
+    color:var(--transparent-white);
+    font-size:15px;
+}
+
+.col{
+    max-width:280px;
+    padding:2rem;
+    color:white;
+}
+
+.col-1{
+    background-color: var(--bright-orange);
+}
+
+.col-2{
+    background-color: var(--dark-cyan);
+}
+
+.col-3{
+    background-color: var(--very-dark-cyan);
+}
+
+button{
+    padding:0.9rem 1rem;
+    border-radius:2rem;
+    background-color:white;
+    width:130px;
+    border:none;
+    cursor:pointer;
+}
+
+.col-1 button:hover, .col-2 button:hover, .col-3 button:hover{
+    background:transparent;
+    color:white;
+    z-index:1;
+    border: 1px white solid;
+}
+
+.col-1 button{
+    color:var(--bright-orange);
+}
+
+.col-2 button{
+    color:var(--dark-cyan);
+}
+
+.col-3 button{
+    color:var(--very-dark-cyan);
+}
+
+@media screen and (min-width:500px){
+
+    body{
+        display:grid;
+        place-items:center;
+        height:100vh;
+    }
+
+    article{
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+
+    p{
+        margin-bottom:5rem;
+    }
+
+    button{
+        margin-bottom:1rem;
+    }
+
+    @keyframes scale{
+        from{transform: scale(0);}
+        to{transform: scale(initial);}
+        }
+}
+
+
