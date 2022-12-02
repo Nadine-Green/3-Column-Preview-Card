@@ -94,21 +94,24 @@ button{
     body{
         display:grid;
         place-items:center;
-        height:100vh;
+    }
+
+    main{
+        height:30%;
     }
 
     article{
         flex-direction:row;
         flex-wrap: wrap;
-        height:80%;
+        
     }
 
     p{
-        margin-bottom:5rem;
+        margin-bottom:3rem;
     }
 
     button{
-        margin-bottom:1rem;
+        margin-bottom:-50rem;
     }
 
     @keyframes scale{
