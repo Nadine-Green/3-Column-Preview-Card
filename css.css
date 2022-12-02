@@ -98,7 +98,6 @@ button{
     }
 
     main{
-        
     }
 
     article{
@@ -113,6 +112,10 @@ button{
 
     button{
         
+    }
+
+    .col{
+       height:470px; 
     }
 
     @keyframes scale{
