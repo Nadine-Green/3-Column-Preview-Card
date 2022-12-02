@@ -98,12 +98,13 @@ button{
     }
 
     main{
-        height:60%;
+        
     }
 
     article{
         flex-direction:row;
         flex-wrap: wrap;
+        height:80%;
     }
 
     p{
