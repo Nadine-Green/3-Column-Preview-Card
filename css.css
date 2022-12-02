@@ -98,21 +98,20 @@ button{
     }
 
     main{
-        
+        height:60%;
     }
 
     article{
         flex-direction:row;
         flex-wrap: wrap;
-        
     }
 
     p{
-        margin-bottom:3rem;
+        margin-bottom:5rem;
     }
 
     button{
-        margin-bottom:-50rem;
+        
     }
 
     @keyframes scale{
