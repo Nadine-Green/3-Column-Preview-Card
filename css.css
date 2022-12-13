@@ -97,25 +97,21 @@ button{
         height:100vh;
     }
 
-    main{
-    }
 
     article{
         flex-direction:row;
         flex-wrap: wrap;
-        height:70%;
+        height:90%;
+        background-color:red;
     }
 
     p{
         margin-bottom:5rem;
     }
 
-    button{
-        
-    }
-
     .col{
-       height:470px; 
+       height:480px; 
+       padding-top:3.5rem;
     }
 
     @keyframes scale{
