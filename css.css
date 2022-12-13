@@ -89,6 +89,10 @@ button{
     color:var(--very-dark-cyan);
 }
 
+.attribution{
+    display:none;
+}
+
 @media screen and (min-width:500px){
 
     body{
@@ -101,8 +105,9 @@ button{
     article{
         flex-direction:row;
         flex-wrap: wrap;
+        justify-content: center;
         height:90%;
-        background-color:red;
+        
     }
 
     p{
@@ -112,6 +117,10 @@ button{
     .col{
        height:480px; 
        padding-top:3.5rem;
+    }
+
+    .attribution{
+        display:block;
     }
 
     @keyframes scale{
