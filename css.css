@@ -68,6 +68,7 @@ button{
     width:130px;
     border:none;
     cursor:pointer;
+    transition: .5s ease-in-out;
 }
 
 .col-1 button:hover, .col-2 button:hover, .col-3 button:hover{
@@ -106,8 +107,6 @@ button{
         flex-direction:row;
         flex-wrap: wrap;
         justify-content: center;
-        height:90%;
-        
     }
 
     p{
